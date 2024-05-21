@@ -1,8 +1,14 @@
-html, body {
-    magin: 0;
-    padding: 0;
+function setup () {
+    createCanvas (600, 600);
+    background("black");
  }
- canvas {
-    display: block;
+
+ function draw () {
+    stroke("blue");
+    fill("red");
+
+    if(mouseIsPressed){
+        rect(mouseX, mouseY, 20, 35);
+    }
+    
  }
- 
